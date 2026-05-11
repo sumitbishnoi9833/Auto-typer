@@ -3,7 +3,7 @@ import re
 import os
 import sys
 
-# VERSION: 50
+# VERSION: 47
 
 def modify_self():
     file_path = os.path.abspath(__file__)
@@ -11,7 +11,7 @@ def modify_self():
     with open(file_path, "r") as f:
         code = f.read()
 
-    # Find version number
+    
     match = re.search(r"# VERSION: (\d+)", code)
 
     if match:
@@ -20,14 +20,14 @@ def modify_self():
 
         print(f"Changing version {current_version} -> {new_version}")
 
-        # Replace old version with new version
+       
         updated_code = re.sub(
             r"# VERSION: \d+",
             f"# VERSION: {new_version}",
             code
         )
 
-        # Save modified code
+        
         with open(file_path, "w") as f:
             f.write(updated_code)
 
@@ -37,7 +37,7 @@ while True:
     modify_self()
 
     print("Waiting 10 minutes...")
-    time.sleep(6)  # 600 sec = 10 mins
+    time.sleep(6)  
 
-    # Restart itself
+ 
     os.execv(sys.executable, ['python'] + sys.argv)

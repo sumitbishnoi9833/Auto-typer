@@ -3,7 +3,7 @@ import re
 import os
 import sys
 
-# VERSION: 89
+# VERSION: 94
 
 def modify_self():
     file_path = os.path.abspath(__file__)
@@ -37,7 +37,7 @@ while True:
     modify_self()
 
     print("Waiting 10 minutes...")
-    time.sleep(6)  
+    time.sleep(1)  
 
  
     os.execv(sys.executable, ['python'] + sys.argv)

@@ -8,7 +8,7 @@ from datetime import datetime
 
 REPO_URL = "https://github.com/sumit989bishnoi-crypto/auto-ai-.git"
 BRANCH = "main"
-COMMIT_INTERVAL = 600  # 10 minutes
+COMMIT_INTERVAL = 6 # 10 minutes
 
 # =========================
 # FIRST TIME SETUP

@@ -3,7 +3,7 @@ import re
 import os
 import sys
 
-# VERSION: 172
+# VERSION: 175
 
 def modify_self():
     file_path = os.path.abspath(__file__)

@@ -6,7 +6,7 @@ from datetime import datetime
 
 REPO_URL = "https://github.com/sumit989bishnoi-crypto/auto-ai-.git"
 BRANCH = "main"
-COMMIT_INTERVAL = 1
+COMMIT_INTERVAL = 5
 
 
 if not os.path.exists(".git"):

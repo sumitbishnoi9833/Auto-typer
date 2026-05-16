@@ -19,3 +19,36 @@ Adjustable typing speed
 Presses Enter after every line
 Lightweight and simple
 Works on Linux/X11
+Arch Linux
+sudo pacman -S xdotool
+Ubuntu/Debian
+sudo apt install xdotool
+Setup
+
+Clone the repo:
+
+git clone https://github.com/sumit989bishnoi-crypto/Auto-typer.git
+cd Auto-typer
+
+Create text file:
+
+nano code.txt
+
+Add anything you want typed automatically.
+
+Run
+python typer.py
+
+After running:
+
+You get 5 seconds to focus your editor/window
+Script starts typing automatically
+Customize Speed
+
+Change this value:
+
+"--delay",
+"11",
+
+Lower = faster typing
+Higher = slower typing

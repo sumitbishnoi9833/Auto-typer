@@ -1,7 +1,0 @@
-numpy
-opencv-python
-pyautogui
-pyperclip
-pytesseract
-keyboard
-pillow
